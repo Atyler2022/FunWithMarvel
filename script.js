@@ -274,9 +274,12 @@ $(document).ready(function(){
 
   let newElement = `
   <h1 id=’name’> ${movieList[“title”]} </h1>
-  <p>I love ${movieList[“favFood”]} Food in ${movieList[“location”]}</p>
   <img class=’myPhotos’ src=’${movieList[“moviePoster”]}’>
-  $(“#display-area”).append(newElement)
+  <p> ${movieList[“releaseDate”]} </p>
+  <p> ${movieList[“releasePosition”]}</p>
+  <p> ${movieList[“description”]}</p>
+  <p> ${movieList[“budget”]}</p>
+   $(“#display-area”).append(newElement)
 
 //All code here
 
